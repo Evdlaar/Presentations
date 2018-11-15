@@ -1,4 +1,4 @@
-## Session Demo files
+# Session Demo files
 
 Welcome to my repository of demo files I use during sessions!
 Files are ordered inside folders based on the session. 
