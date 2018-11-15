@@ -22,7 +22,7 @@
 - Check results, notice rowcount
 
 - Execute R script
-  -> Copy & paste code from demo script
+  -> Copy & paste code from "plot_cor_heatmap.txt" script
   -> R Version : Microsoft R Open
 - Save and Run
 - Visualize Dataset and Device Port
