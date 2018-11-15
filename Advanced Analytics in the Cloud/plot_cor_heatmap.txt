@@ -1,0 +1,23 @@
+library(ggplot2)
+library(reshape2)
+
+# Map 1-based optional input ports to variables
+automobiles <- maml.mapInputPort(1) # class: data.frame
+
+# Create a correlation matrix for the numerical features
+cor_matrix <- cor(automobiles[sapply(automobiles, is.numeric)], use="complete.obs")
+
+# Melt the matrix to a table format
+melted_cor_matrix <- melt(cor_matrix)
+
+# Plot a heatmap of the correlation table
+ggplot(data = melted_cor_matrix, aes(x=Var1, y=Var2, fill=value)) + 
+  geom_tile() +
+  geom_text(aes(Var2, Var1, label = round(value, digits=2)), color = "black", size = 4) +
+  theme(axis.title.x=element_blank(),
+        axis.ticks.x=element_blank(),
+	  axis.title.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+# Select data.frame to be sent to the output Dataset port
+maml.mapOutputPort("automobiles");
