@@ -1,4 +1,4 @@
-# Session Demo files
+# Session Repository
 
 Welcome to my session repository.
 Inside this repository the slides, demos and additional materials can be found which I used during an event.
