@@ -1,0 +1,69 @@
+- Show data in on-premises automobile database
+- Open AzureML Studio
+- Settings
+- New Data Gateway
+- Register gateway
+
+- New Experiment
+- Blank experiment
+- Import Data
+  -> On-Premises SQL Database
+  -> Fill in information and query
+  -> Check "Use cached results"
+- Save and Run
+- Visualize dataset -> note graphs, missing values data types
+- Edit metadata -> with rules -> Include -> Column Type String
+  -> Data type "String" -> Make categorical
+- Save and run
+- Visualize edit metadata
+- Clean Missing Data
+  -> Remove entire row
+- Save and run
+- Check results, notice rowcount
+
+- Execute R script
+  -> Copy & paste code from demo script
+  -> R Version : Microsoft R Open
+- Save and Run
+- Visualize Dataset and Device Port
+  -> notice strong relation with engine size and curb weight on price
+- Remove Execute R script
+
+- Split data
+  -> 0,9 split / 1234 Random seed
+- Train model
+  -> Column name "price"
+- Linear Regression
+  -> Random seed 1234
+- Score model
+- Evaluate model
+- Save and run
+- Check out the Score model results
+- Check out Evaluate model results
+
+- Add Boosted Decision Tree Regression
+  -> Random seed 1234
+- Add Train Model
+  -> Column name "price"
+- Add Score model
+  -> Attach to second input of Evaluate Model
+- Save and run
+
+- Remove Train Model from the Boosted Decision Tree Regression
+- Add Tune Model Hyperparameters
+  -> Select "price" column / Max runs 10 / 1234 random seed / measure on Coefficient of determination
+  -> Attach to the Decision Tree
+  -> Attach the "trained best model" to Score model
+- Change Properties of the Boosted Decision Tree Regression from "single parameter" to "Parameter Range"
+- Save and run
+- Check Tune Model Hyperparameters
+- Check Evaluate Model results
+
+- Set up web service
+- Add Select Columns in Dataset
+- Remove line between Score Model and Web service output
+- Connect Select Columns in Dataset to Score model and Web service output
+- In column selector include "Scored Labels"
+- Save and run
+- Deploy web service (classic)
+
