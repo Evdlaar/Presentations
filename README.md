@@ -7,5 +7,5 @@ Want to see the session materials for a specific event?
 All events are ordered into seperate folders.
 
 Got a question about a session or want to learn more about the topic we discussed?
-You can contact me through Twitter at @evdlaar!
+You can contact me through Twitter at [@evdlaar](https://www.twitter.com/evdlaar)!
 
