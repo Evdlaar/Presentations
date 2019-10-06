@@ -1,6 +1,11 @@
 # Session Demo files
 
-Welcome to my repository of demo files I use during sessions!
-Files are ordered inside folders based on the session. 
-Slidedecks are available through Slideshare which can be found here: https://www.slideshare.net/EnricovandeLaar
+Welcome to my session repository.
+Inside this repository the slides, demos and additional materials can be found which I used during an event.
+
+Want to see the session materials for a specific event?
+All events are ordered into seperate folders.
+
+Got a question about a session or want to learn more about the topic we discussed?
+You can contact me through Twitter at @evdlaar!
 
